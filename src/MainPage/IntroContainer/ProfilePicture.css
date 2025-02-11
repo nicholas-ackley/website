@@ -1,0 +1,131 @@
+.mainContainer_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: left;
+    width: 400px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0);
+    
+    position: fixed;
+    top: 35%;
+    left: 25%;
+    text-indent: left;
+}
+    .profileContainer_picture {
+        width: 400px; /* Diameter of the circle */
+        height: 400px; /* Diameter of the circle */
+        background-color: white; /* Background of the circle */
+        border-radius: 50%; /* Makes it a circle */
+        position: fixed; /* Positions the circle relative to the viewport */
+        left: 50%; /* Center horizontally */
+        top: 30%; /* Adjust vertically */
+        box-shadow: 0 0 20px 10px rgba(0, 0, 255, 0.6); /* Optional blue glow */
+        border: 3px solid rgba(238, 255, 1, 0.6); /* Thin glowing border */
+        animation: pulse 2s infinite; /* Pulsing glow effect */
+        overflow: hidden; /* Ensures the image stays inside the circle */
+}
+
+   
+
+.me {
+    width: 250%; /* Fill the width of the circle */
+    height: 140%; /* Fill the height of the circle */
+    object-fit: cover; /* Ensures the image scales proportionally */
+    object-position: center; /* Centers the image inside the circle */
+    transform: translateX(-36%);
+}
+
+.hello_container {
+    color: rgb(240, 240, 116);
+    margin-bottom: -55px;
+    font-size: 1.2rem;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif; /* Elegant font family */
+    font-size: 1.5rem; /* Slightly larger font size for better visibility */
+    font-weight: 400; /* Smooth weight for elegance */
+    letter-spacing: 1px; /* Slight spacing for clarity */
+    text-transform: capitalize; /* Ensures uniform capitalization */
+}
+
+.name_container{
+    color: white;
+    font-size: x-large;
+    font-display: bold;
+    margin-bottom: -45px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem; /* Large font size */
+    font-weight: 700;
+}
+.typeWriter_container{
+    color: yellow;
+    position: relative;
+    margin-bottom: -10px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+}
+.welcome_container{
+    color: white;
+    font-size: small;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+
+
+
+/* TYPE WRITER EFFECTS  */
+
+  
+  .cursor {
+    display: inline-block;
+    background-color: orange; /* Blinking orange cursor */
+    width: 2px; /* Thin cursor */
+    height: 1em; /* Matches text height */
+    margin-left: 1px; /* Slight gap from text */
+    animation: blink 0.7s infinite; /* Blinking effect */
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  
+  /* PUSLING GLOW EFFECT */
+  
+  .profileContainer_picture {
+    width: 400px; /* Diameter of the circle */
+    height: 400px; /* Diameter of the circle */
+    background-color: white; /* Background of the circle */
+    border-radius: 50%; /* Makes it a circle */
+    position: fixed; /* Positions the circle relative to the viewport */
+    left: 50%; /* Center horizontally */
+    top: 30%; /* Adjust vertically */
+    box-shadow: 0 0 10px 5px rgba(191, 223, 14, 0.4); /* Softer blue glow */
+    border: 3px solid rgba(223, 226, 37, 0.3); /* Dimmed thin border */
+    animation: pulse 7s infinite; /* Slower, subtle pulsing glow */
+    overflow: hidden; /* Ensures the image stays inside the circle */
+}
+
+/* Pulsing Glow Effect for Border */
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 10px 5px rgba(151, 180, 21, 0.3); /* Dim, soft glow */
+        border: 3px solid rgba(240, 243, 42, 0.3); /* Dim border */
+    }
+    50% {
+        box-shadow: 0 0 15px 10px rgba(233, 218, 11, 0.808); /* Slightly stronger glow */
+        border: 3px solid rgba(208, 255, 0, 0.5); /* Slightly stronger border glow */
+    }
+}
