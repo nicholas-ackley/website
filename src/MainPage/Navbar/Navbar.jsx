@@ -10,7 +10,7 @@ const Navbar = () => {
         <span><b>nicholasAckley();</b></span>
       </div>
       <ul className="navbar-links">
-        <li><Link to="/">Home</Link></li>
+        <li><Link to="/website">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/projects">Projects</Link></li>
         <li><Link to="/blog">Blog</Link></li>
