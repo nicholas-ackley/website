@@ -13,7 +13,7 @@ const Navbar = () => {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/projects">Projects</Link></li>
-        <li><Link to="/github">Github</Link></li>
+        <li><Link to="/blog">Blog</Link></li>
       </ul>
       <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="github_container">
         <img src={Github} alt="GitHub" className="github" />
