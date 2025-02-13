@@ -66,6 +66,12 @@
   right: 20%;
   top: 25px;
   overflow: hidden; /* Ensures the image stays inside the circle */
+  animation: fadeInDrop 0.6s ease forwards; /* Animation for fade and drop */
+  opacity: 0; /* Initially hidden */
+  transform: translateY(-30px); /* Start above the viewport */
+  animation: fadeInDrop 0.6s ease forwards; /* Animation for fade and drop */
+  animation-delay: 0.6s; /* Delay the animation */
+
 }
 
 .github {
@@ -84,4 +90,85 @@
   padding: 15px;
   font-size: 1.3rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  animation: fadeInDrop 0.6s ease forwards; /* Animation for fade and drop */
+
+}
+.navbar-links a {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Active link with a glowing underline */
+
+.navbar-links a.active::after {
+  content: "";
+  position: absolute;
+  width: 100%; /* Full underline width */
+  height: 5px; /* Thicker underline */
+  background-color: #f1c40f; /* Yellow underline color */
+  border-radius: 10px; /* Smooth rounded edges */
+  bottom: -5px; /* Position below the text */
+  left: 0;
+  box-shadow: 0 0 10px #f1c40f, 0 0 20px #f1c40f, 0 0 30px #f1c40f; /* Glowing effect */
+}
+
+/* Smooth animation on hover or when active */
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  width: 0; /* Start with no underline */
+  height: 5px; /* Thicker underline to match active */
+  background-color: #f1c40ff1;
+  border-radius: 10px; /* Smooth rounded edges */
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-links a:hover::after,
+.navbar-links a.active::after {
+  width: 100%; /* Expand underline to full width */
+}
+
+/* Navbar item animation */
+.navbar-links .nav-item {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(-30px); /* Start above the viewport */
+  animation: fadeInDrop 0.6s ease forwards; /* Animation for fade and drop */
+  animation-delay: .199999s;
+}
+
+/* Keyframes for the animation */
+@keyframes fadeInDrop {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px); /* Start above */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Drop to final position */
+  }
+}
+
+/* Ensure each item has a unique delay */
+.navbar-links .nav-item {
+  animation-delay: var(--delay); /* Use inline animation delay */
+}
+
+
+.navbar-links a.active::after {
+  content: "";
+  position: absolute;
+  width: 100%; /* Full underline width */
+  height: 3px; /* Thickness of the underline */
+  background-color: #f1c40f; /* Yellow underline */
+  bottom: -5px; /* Position below the text */
+  left: 0;
+  border-radius: 5px; /* Smooth rounded edges */
+  box-shadow: 0 0 10px #f1c40f, 0 0 20px #f1c40f; /* Glowing effect */
 }

@@ -49,7 +49,7 @@
     text-transform: capitalize; /* Ensures uniform capitalization */
 }
 
-.name_container{
+.name_container {
     color: white;
     font-size: x-large;
     font-display: bold;
@@ -57,8 +57,15 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem; /* Large font size */
     font-weight: 700;
-}
-.typeWriter_container{
+  
+    /* Animation */
+    opacity: 0; /* Start invisible */
+    position: relative; /* Position for animation */
+    animation: slideInBottom .7s ease forwards; /* Slide-in from bottom */
+    animation-delay: 0.69s; /* Delay to start after profile picture */
+  }
+  
+  .typeWriter_container {
     color: yellow;
     position: relative;
     margin-bottom: -10px;
@@ -67,17 +74,55 @@
     font-size: 1.2rem;
     font-weight: 600;
     color: white;
-}
-.welcome_container{
+  
+    /* Animation */
+    opacity: 0; /* Start invisible */
+    position: relative; /* Position for animation */
+    animation: slideInBottom .7s ease forwards; /* Slide-in from bottom */
+    animation-delay: .69s; /* Delay to start after name container */
+  }
+  
+  .welcome_container {
     color: white;
     font-size: small;
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     font-weight: 800;
     color: #ffffff;
-}
-
-
+  
+    /* Animation */
+    opacity: 0; /* Start invisible */
+    position: relative; /* Position for animation */
+    animation: slideInLeft .7s ease forwards; /* Slide-in from left */
+    animation-delay: .71s; /* Delay to start after type writer container */
+  }
+  
+  /* Keyframes for sliding animations */
+  
+  /* Sliding in from bottom */
+  @keyframes slideInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(50px); /* Start below the viewport */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* End in place */
+    }
+  }
+  
+  /* Sliding in from left */
+  @keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-200%); /* Start far to the left */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); /* End in place */
+    }
+  }
+  
 
 
 /* TYPE WRITER EFFECTS  */
@@ -104,19 +149,35 @@
   
   /* PUSLING GLOW EFFECT */
   
-  .profileContainer_picture {
-    width: 400px; /* Diameter of the circle */
-    height: 400px; /* Diameter of the circle */
-    background-color: white; /* Background of the circle */
-    border-radius: 50%; /* Makes it a circle */
-    position: fixed; /* Positions the circle relative to the viewport */
-    left: 50%; /* Center horizontally */
-    top: 30%; /* Adjust vertically */
-    box-shadow: 0 0 10px 5px rgba(191, 223, 14, 0.4); /* Softer blue glow */
-    border: 3px solid rgba(223, 226, 37, 0.3); /* Dimmed thin border */
-    animation: pulse 7s infinite; /* Slower, subtle pulsing glow */
-    overflow: hidden; /* Ensures the image stays inside the circle */
+/* Initial animation state for profile picture */
+.profileContainer_picture {
+  width: 400px; /* Diameter of the circle */
+  height: 400px; /* Diameter of the circle */
+  background-color: white; /* Background of the circle */
+  border-radius: 50%; /* Makes it a circle */
+  position: fixed; /* Positions the circle relative to the viewport */
+  left: 50%; /* Start far to the right */
+  top: 25%; /* Adjust vertically */
+  box-shadow: 0 0 10px 5px rgba(191, 223, 14, 0.4); /* Softer glow */
+  border: 3px solid rgba(223, 226, 37, 0.3); /* Dim border */
+  animation: slideIn .8s ease forwards; /* Trigger slide-in animation */
+  animation-delay: .5s;
+  opacity: 0; /* Star invisible */
+  overflow: hidden; /* Ensures the image stays inside the circle */
 }
+
+/* Keyframes for slide-in animation */
+@keyframes slideIn {
+  0% {
+    opacity: 0; /* Fully transparent */
+    transform: translateX(200%); /* Start far to the right */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+    transform: translateX(0); /* Final position */
+  }
+}
+
 
 /* Pulsing Glow Effect for Border */
 @keyframes pulse {
