@@ -7,7 +7,7 @@ import Projects from "./ProjectsPage/Projects.jsx";
 import Blog from "./BlogPage/Blog.jsx";
 function App() {
   return (
-    <Router basename="/website">
+    <Router basename="/">
       <div className="hero">
         <Navbar />
         <Routes>
