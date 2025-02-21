@@ -6,7 +6,7 @@ import Github from "../../images/github.png";
 const Navbar = () => {
   const location = useLocation(); // Get the current route
   const links = [
-    { name: "Home", path: "/website" },
+    { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Projects", path: "/projects" },
     { name: "Blog", path: "/blog" },
