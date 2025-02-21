@@ -7,12 +7,12 @@ import Projects from "./ProjectsPage/Projects.jsx";
 import Blog from "./BlogPage/Blog.jsx";
 function App() {
   return (
-    <Router basename="/">
+    <Router basename="/website">
       <div className="hero">
         <Navbar />
         <Routes>
 
-          <Route path="/website" element={<ProfilePicture />} />
+          <Route path="/" element={<ProfilePicture />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/blog" element={<Blog />} />
