@@ -1,10 +1,12 @@
 .navbar-container {
   display: flex; /* Ensures the navbar stays horizontal */
   justify-content: center; /* Center the navbar horizontally */
-  background-color: rgba(19, 17, 17, 0.39);
+  background-color: rgba(19, 17, 17, 0.774);
+  position: fixed; /* Fixed position on the viewport */
   padding: 10px 20px; /* Spacing around the navbar */
   height: 50px;
   width: 100%;
+  z-index:1;
 }
 
 .navbar-links {
@@ -75,10 +77,10 @@
 }
 
 .github {
-  width: 100%; /* Ensures the image covers the full width of the circle */
-  height: 110%; /* Ensures the image covers the full height of the circle */
-  object-fit: cover; /* Scales the image proportionally to cover the circle */
-  object-position: center; /* Centers the image within the circle */
+  width: 100%; /* Ensures the image cov
+  height: 110%; /* Ensures the image co*/
+  object-fit: cover; /* Scales the image */
+  object-position: center; /* Centers t
   position: relative;
   top: -1px;
 

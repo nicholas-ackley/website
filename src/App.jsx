@@ -18,7 +18,6 @@ function App() {
           <Route path="/blog" element={<Blog />} />
 
 
-          {/* Add routes for Projects and Github if needed */}
         </Routes>
       </div>
     </Router>
