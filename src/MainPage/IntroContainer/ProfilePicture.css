@@ -194,9 +194,10 @@
 
 
 /* MAC BOOK M2 DISPLAY */
-@media (min-width: 2000px) and (max-width: 2560px) {
+@media (min-width: 1280px) and (max-width: 1600px) {
+  /* Styles for MacBook Air/Pro M2 screens */
   .mainContainer_info {
     position: relative;
-    left: 35vh
+    left: 35%;
   }
 }
