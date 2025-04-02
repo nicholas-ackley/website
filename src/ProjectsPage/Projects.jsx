@@ -2,6 +2,7 @@ import React from "react";
 import "./Projects.css";
 import Greek from "../images/greekpop.png";
 import Website from "../images/website.png";
+import Tinder from "../images/tinder.svg";
 
 const Projects = () => {
   return (
@@ -41,7 +42,7 @@ const Projects = () => {
 
         <div className="project-card">
           <div className="project-thumbnail">
-            <img src={Greek} alt="SISTEKDES" className="project-image" />
+            <img src={Tinder} alt="SISTEKDES" className="project-image" />
           </div>
           <h3 className="project-name">Tinder Replica</h3>
           <p className="project-description">

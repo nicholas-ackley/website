@@ -34,6 +34,7 @@ const Bio = () => {
         in my projects or as a Full Stack intern. For any inquiries for internships or full time offers, feel free to reach out to me!
         </h3>
        </div> */}
+       
 <div className="container">
 
     <div className="rectangle">
@@ -51,6 +52,7 @@ const Bio = () => {
     </div>
    
   </div>
+</div>
   
        </div>
        <div className="grid-container">
@@ -98,7 +100,6 @@ const Bio = () => {
     <img src="csharp-logo.png" alt="C# Logo" />
     <span>C#</span>
   </div>
-</div>
 </div>
     
     </>

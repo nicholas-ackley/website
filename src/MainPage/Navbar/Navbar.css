@@ -178,3 +178,10 @@
   border-radius: 5px; /* Smooth rounded edges */
   box-shadow: 0 0 10px #f1c40f, 0 0 20px #f1c40f; /* Glowing effect */
 }
+.navbar-links a {
+  color: rgb(78, 79, 112); /* light transparent grey */
+}
+
+.navbar-links a.active {
+  color: white; /* solid white for active link */
+}

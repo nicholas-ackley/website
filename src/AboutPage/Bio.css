@@ -13,28 +13,16 @@ h3 {
 
 .about-me-background {
   
-  width:65%;
+  width: 72%;
   height: 525px;
   margin: 0 auto;
   padding: 20px;
   margin-top: 5%;
   background-color: #252525cf;
   border-radius: 25px;
-  border: 1px solid rgba(255, 255, 255, 0.52);
+  border: 1px solid rgba(255, 255, 255, 0.178);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-/* .about-me-container h1 {
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.about-me-container p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 15px;
-} */
-
 .aboutMe_Title {
   display: flex;
   padding: 1%;
@@ -95,7 +83,7 @@ opacity: 0;
   /* border: 2px solid black; */
   color: rgb(255, 249, 229);
   text-indent: 7%;
-  word-spacing: 2px;
+  word-spacing: 3px;
   font-size: 17px;
   position: relative;
   left: 27vh;
@@ -122,9 +110,9 @@ opacity: 0;
   position: relative;
   top: 20vh;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  grid-template-rows: repeat(3, 100px); /* 3 rows */
-  gap: 45px; /* Spacing between boxes */
+  grid-template-columns: repeat(4, 280px); /* 4 columns */
+  grid-template-rows: repeat(3, 90px); /* 3 rows */
+  gap: 45px;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -152,7 +140,7 @@ opacity: 0;
   gap: 10px;
 }
 .box img {
-  width: 10vh; /* Small size */
+  width: 10; /* Small size */
   height: 10vh;
   object-fit: contain; /* Ensures the logo fits within the box */
 }
@@ -236,8 +224,8 @@ opacity: 0;
 @media (min-width: 1280px) and (max-width: 1600px) {
   /* Styles for MacBook Air/Pro M2 screens */
 .about-me-background{
-  width:150vh;
-  height: 455px;
+  width:80%;
+  height: 525px;
 }
   
 }
