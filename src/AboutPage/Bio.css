@@ -236,8 +236,8 @@ opacity: 0;
 @media (min-width: 1280px) and (max-width: 1600px) {
   /* Styles for MacBook Air/Pro M2 screens */
 .about-me-background{
-  width:65%;
-  height: 525px;
+  width:150vh;
+  height: 455px;
 }
   
 }
