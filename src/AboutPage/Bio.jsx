@@ -1,6 +1,15 @@
 import React from 'react'
 import './Bio.css'
 import Gib from '../images/gib.jpg'
+//Image imports
+import HTML from '../images/html-logo.png'
+import Python from '../images/python-logo.png'
+import Javascript from '../images/js-logo.png'
+import CSS from '../images/css-logo.png'
+import Traver from '../images/traver-logo.png'
+import ReactLogo from '../images/react-logo.png'
+import Swift from '../images/swift.png'
+import CPlusPlus from '../images/c++.png'
 const Bio = () => {
   return (
     <>
@@ -29,7 +38,7 @@ const Bio = () => {
 
     <div className="rectangle">
     <h3>Hi everyone! My name is Nicholas Ackley I'm currently a student at the University of Texas at Dallas
-            studying Computer Science and Music. In this website, you will find a collection of my projects, that 
+            studying Computer Science and Music. In this website, you will find a colle+ction of my projects, that 
             I have worked on in my free time. Creating these projects I combined both my passion for coding, as well as my take on simple
             yet clean designs.
           </h3>
@@ -45,21 +54,52 @@ const Bio = () => {
   
        </div>
        <div className="grid-container">
-       <div className="box">HTML
-       </div>
-       <div className="box">CSS</div>
-       <div className="box">Javascript</div>
-       <div className="box">React</div>
-       <div className="box">Python</div>
-       <div className="box">Swift</div>
-       <div className="box">C++</div>
-       <div className="box">Traver Companies </div>
-       <div className="box">Github</div>
-       <div className="box">MIPS</div>
-       <div className="box">C#</div>
-      <div className="box">Github</div>
-    </div>
-      </div>
+  <div className="box">
+    <img src={HTML} alt="HTML Logo" />
+    <span>HTML</span>
+  </div>
+  <div className="box">
+    <img src={CSS} alt="CSS Logo" />
+    <span>CSS</span>
+  </div>
+  <div className="box">
+    <img src={Javascript} alt="JavaScript Logo" />
+    <span>JavaScript</span>
+  </div>
+  <div className="box">
+    <img src={ReactLogo} alt="React Logo" />
+    <span>React</span>
+  </div>
+  <div className="box">
+    <img src={Python} alt="Python Logo" />
+    <span>Python</span>
+  </div>
+  <div className="box">
+    <img src={Swift} alt="Swift Logo" />
+    <span>Swift</span>
+  </div>
+  <div className="box">
+    <img src={CPlusPlus} alt="C++ Logo" />
+    <span>C++</span>
+  </div>
+  <div className="box">
+    <img src={Traver} alt="Traver Companies" />
+    <span>Traver Companies</span>
+  </div>
+  <div className="box">
+    <img src="github-logo.png" alt="GitHub Logo" />
+    <span>GitHub</span>
+  </div>
+  <div className="box">
+    <img src="mips-logo.png" alt="MIPS Logo" />
+    <span>MIPS</span>
+  </div>
+  <div className="box">
+    <img src="csharp-logo.png" alt="C# Logo" />
+    <span>C#</span>
+  </div>
+</div>
+</div>
     
     </>
   )

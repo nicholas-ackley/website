@@ -4,11 +4,11 @@
     justify-content: flex-start;
     align-items: flex-start;
     justify-content: left;
-    width: 400px;
+    width: 550px;
     height: 300px;
     background-color: rgba(0, 0, 0, 0);
     
-    position: fixed;
+    position: relative; 
     top: 35%;
     left: 25%;
     text-indent: left;
@@ -55,14 +55,12 @@
     font-display: bold;
     margin-bottom: -45px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.6rem; /* Large font size */
+    font-size: 1.6rem; 
     font-weight: 700;
-  
-    /* Animation */
-    opacity: 0; /* Start invisible */
+    opacity: 0; 
     position: relative; /* Position for animation */
-    animation: slideInBottom .7s ease forwards; /* Slide-in from bottom */
-    animation-delay: 0.69s; /* Delay to start after profile picture */
+    animation: slideInBottom .7s ease forwards; 
+    animation-delay: 0.69s; 
   }
   
   .typeWriter_container {
@@ -189,4 +187,16 @@
         box-shadow: 0 0 15px 10px rgba(233, 218, 11, 0.808); /* Slightly stronger glow */
         border: 3px solid rgba(208, 255, 0, 0.5); /* Slightly stronger border glow */
     }
+}
+
+
+
+
+
+/* MAC BOOK M2 DISPLAY */
+@media (min-width: 2000px) and (max-width: 2560px) {
+  .mainContainer_info {
+    position: relative;
+    left: 35vh
+  }
 }

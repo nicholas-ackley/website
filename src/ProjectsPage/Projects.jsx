@@ -1,8 +1,18 @@
 import React from 'react'
-
+import './Projects.css'
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <>
+    <div className="projects-title_container">
+      <div className="title">
+        Past Project Experience
+      </div>
+    </div>
+    
+    
+    
+    
+    </>
   )
 }
 

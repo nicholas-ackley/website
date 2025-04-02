@@ -1,0 +1,23 @@
+.projects-title_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-color: red;
+    padding: 20px;
+    position: relative;
+    top: 10vh;
+    
+}
+.title{
+    color: white;
+
+}
+.projects-grid{
+
+}
+
+/* Hover effect on container that affects all children */
+.projects-title_container:hover * {
+    transform: scale(1.05);
+}
