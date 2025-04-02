@@ -198,6 +198,6 @@
   /* Styles for MacBook Air/Pro M2 screens */
   .mainContainer_info {
     position: relative;
-    left: 35%;
+    left: 35vh;
   }
 }
