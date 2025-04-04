@@ -18,7 +18,10 @@ const Blog = () => {
           <textarea placeholder="Your message"></textarea>
           <div className="form-footer">
             <button type="submit">Send Message</button>
-
+            <div className="captcha">
+              <label>2 + 3 = </label>
+              <input type="text" />
+            </div>
           </div>
         </form>
 
