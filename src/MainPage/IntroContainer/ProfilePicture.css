@@ -205,10 +205,11 @@
 
 /* IPHONE DISPLAY */
 @media only screen 
-  and (device-width: 430px) 
-  and (device-height: 932px) 
+  and (device-width: 393px) 
+  and (device-height: 852px) 
   and (-webkit-device-pixel-ratio: 3) 
   and (orientation: portrait) {
+    
     .signature_container{
   color: white;
   color: #ffe600d8;
