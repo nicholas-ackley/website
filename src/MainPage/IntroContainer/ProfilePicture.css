@@ -205,9 +205,9 @@
 
 /* IPHONE DISPLAY */
  @media only screen 
-    and (device-width: 390px) 
-    and (device-height: 844px) 
-    and (-webkit-device-pixel-ratio: 3) {
+  and (min-device-width: 375px) 
+  and (max-device-width: 430px) 
+  {
     
     .signature_container{
   color: white;
