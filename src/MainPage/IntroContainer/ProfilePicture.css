@@ -205,8 +205,8 @@
 
 /* IPHONE DISPLAY */
  @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 430px) 
+  and (min-device-width: 390px) 
+  and (max-device-width: 844px) 
   {
     
     .signature_container{
