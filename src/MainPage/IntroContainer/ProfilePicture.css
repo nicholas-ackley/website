@@ -6,7 +6,7 @@
     justify-content: left;
     width: 550px;
     height: 300px;
-    background-color: rgba(0, 0, 0, 0);
+    /* background-color: rgba(0, 0, 0, 0); */
     
     position: relative; 
     top: 35%;
@@ -200,4 +200,113 @@
     position: relative;
     left: 35vh;
   }
+}
+
+
+/* IPHONE DISPLAY */
+@media only screen 
+  and (device-width: 430px) 
+  and (device-height: 932px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+    .signature_container{
+  color: white;
+  color: #ffe600d8;
+  margin-right: 70%;
+  padding: 15px;
+  font-size: 1.3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  animation: fadeInDrop 0.6s ease forwards;
+}
+  .profileContainer_picture {
+  width: 30vh; /* Diameter of the circle */
+  height: 30vh; /* Diameter of the circle */
+  background-color: white; /* Background of the circle */
+  border-radius: 50%; /* Makes it a circle */
+  position: fixed; /* Positions the circle relative to the viewport */
+  left: 5vh; 
+  top: 13vh; /* Adjust vertically */
+  box-shadow: 0 0 10px 5px rgba(191, 223, 14, 0.4); /* Softer glow */
+  border: 3px solid rgba(223, 226, 37, 0.3); /* Dim border */
+  animation: slideIn .8s ease forwards; /* Trigger slide-in animation */
+  animation-delay: .5s;
+  opacity: 0; /* Star invisible */
+  overflow: hidden; /* Ensures the image stays inside the circle */
+}
+.navbar-container {
+/* display: none; */
+left: 3vh;
+
+}
+.navbar-links {
+  position:fixed;
+  bottom: 0vh;
+  left: -0vh;
+  background-color: rgba(66, 66, 66, 0.315);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 5vh;
+  gap: 10px; /* Add spacing between links */
+  
+
+}
+.navbar-links a {
+  top: 12px;
+  left: -1vh;
+
+}
+.navbar-container {
+  backdrop-filter:none;
+}
+.hello_container {
+font-size: small;
+position: relative; /* Position for animation */
+top: 100px;
+}
+.name_container {
+    color: white;
+    font-size: medium;
+    margin-bottom: -45px;
+    opacity: 0; 
+    position: relative; /* Position for animation */
+    top: 120px;
+    left: -6.5vh;
+    animation: slideInBottom .7s ease forwards; 
+    animation-delay: 0.69s; 
+  }
+
+ 
+  .typeWriter_container {
+    color: rgb(228, 228, 71);
+    position: relative;
+    margin-bottom: -10px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+  
+    /* Animation */
+    opacity: 0; /* Start invisible */
+    position: relative; /* Position for animation */
+    top: 14vh;
+    left: -1vh;
+    animation: slideInBottom .7s ease forwards; /* Slide-in from bottom */
+    animation-delay: .69s; /* Delay to start after name container */
+  }
+  
+  .welcome_container {
+    color: white;
+    font-size: small;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    /* Animation */
+    opacity: 0; /* Start invisible */
+    position: relative; /* Position for animation */
+    top: 14vh;
+    left: -5vh;
+    animation: slideInLeft .7s ease forwards; /* Slide-in from left */
+    animation-delay: .71s; /* Delay to start after type writer container */
+  }
+  
 }
