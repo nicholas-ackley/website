@@ -204,8 +204,10 @@
 
 
 /* IPHONE DISPLAY */
-@media only screen and (max-width: 768px) {
-
+@media screen and (max-width: 767px) {
+  body {
+    background: rgb(255, 0, 0) !important;
+  }
     
     .signature_container{
   color: white;
@@ -234,6 +236,8 @@
 .navbar-container {
 /* display: none; */
 left: 3vh;
+  backdrop-filter:none;
+
 
 }
 .navbar-links {
@@ -254,9 +258,7 @@ left: 3vh;
   left: -1vh;
 
 }
-.navbar-container {
-  backdrop-filter:none;
-}
+
 .hello_container {
 font-size: small;
 position: relative; /* Position for animation */
