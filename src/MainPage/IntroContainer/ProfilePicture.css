@@ -13,21 +13,7 @@
     left: 25%;
     text-indent: left;
 }
-    .profileContainer_picture {
-        width: 400px; /* Diameter of the circle */
-        height: 400px; /* Diameter of the circle */
-        background-color: white; /* Background of the circle */
-        border-radius: 50%; /* Makes it a circle */
-        position: fixed; /* Positions the circle relative to the viewport */
-        left: 50%; /* Center horizontally */
-        top: 30%; /* Adjust vertically */
-        box-shadow: 0 0 20px 10px rgba(0, 0, 255, 0.6); /* Optional blue glow */
-        border: 3px solid rgba(238, 255, 1, 0.6); /* Thin glowing border */
-        animation: pulse 2s infinite; /* Pulsing glow effect */
-        overflow: hidden; /* Ensures the image stays inside the circle */
-}
 
-   
 
 .me {
     width: 250%; /* Fill the width of the circle */
@@ -204,8 +190,8 @@
 
 
 /* IPHONE DISPLAY */
-@media screen and (max-width: 767px) {
-    .signature_container{
+@media (max-width: 600px) {
+    .signature_container_ios{
   color: white;
   color: #ffe600d8;
   margin-right: 70%;
@@ -265,7 +251,6 @@ top: 100px;
     font-size: medium;
     margin-bottom: -45px;
     opacity: 0; 
-    position: relative; /* Position for animation */
     top: 120px;
     left: -6.5vh;
     animation: slideInBottom .7s ease forwards; 
@@ -284,7 +269,6 @@ top: 100px;
   
     /* Animation */
     opacity: 0; /* Start invisible */
-    position: relative; /* Position for animation */
     top: 14vh;
     left: -1vh;
     animation: slideInBottom .7s ease forwards; /* Slide-in from bottom */

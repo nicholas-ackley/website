@@ -54,7 +54,7 @@ export const ProfilePicture = () => {
     <>
       <div className="mainContainer_info">
         <div className="hello_container">
-          <h3>Hello World I'm</h3>
+          <h3>Hello Worlaaaaaaaaaaaaaaaaaaaad I'm</h3>
         </div>
         <div className="name_container">
           <h1><b>Nicholas Ackley</b></h1>
