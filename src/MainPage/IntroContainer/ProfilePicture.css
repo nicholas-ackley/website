@@ -205,10 +205,6 @@
 
 /* IPHONE DISPLAY */
 @media screen and (max-width: 767px) {
-  body {
-    background: rgb(255, 0, 0) !important;
-  }
-    
     .signature_container{
   color: white;
   color: #ffe600d8;
