@@ -190,7 +190,7 @@
 
 
 /* IPHONE DISPLAY */
-@media (max-width: 600px) {
+@media(max-width: 300px) {
     .signature_container_ios{
   color: white;
   color: #ffe600d8;
