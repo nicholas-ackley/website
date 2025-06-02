@@ -1,8 +1,47 @@
-# React + Vite
+<h1 align="center">🌐 Nicholas Ackley Portfolio</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  A personal website showcasing my work, experience, and creative projects.
+  <br />
+  <a href="https://nicholasackley.github.io" target="_blank"><strong>🌟 View Live Website »</strong></a>
+</p>
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Overview
+
+This portfolio highlights my skills as a software developer, music creator, and student. It’s built with modern web technologies and designed to be responsive across devices.
+
+### 🔗 Key Features
+- 🎨 Clean, responsive design
+- 🧠 About Me & Skills sections
+- 🛠️ Project portfolio with interactive cards
+- 📬 Contact form & social links
+- 🌙 Dark/light mode toggle *(optional)*
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** HTML5, CSS3, JavaScript (ES6+), React *(or plain HTML/CSS if not using a framework)*
+- **Styling:** TailwindCSS / Custom CSS
+- **Hosting:** GitHub Pages / Vercel / Netlify
+- **Forms:** Formspree / EmailJS *(for contact form if applicable)*
+
+---
+
+## 📸 Screenshots
+
+| Desktop | Mobile |
+|--------|--------|
+| ![Desktop Preview](./screenshots/desktop.png) | ![Mobile Preview](./screenshots/mobile.png) |
+
+---
+
+## 🚀 Getting Started
+
+Clone the project locally:
+
+```bash
+git clone https://github.com/nicholasackley/nicholasackley.github.io
+cd nicholasackley.github.io
