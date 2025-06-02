@@ -17,16 +17,15 @@ This portfolio highlights my skills as a software developer, music creator, and 
 - 🧠 About Me & Skills sections
 - 🛠️ Project portfolio with interactive cards
 - 📬 Contact form & social links
-- 🌙 Dark/light mode toggle *(optional)*
 
 ---
 
 ## 🛠️ Tech Stack
 
 - **Frontend:** HTML5, CSS3, JavaScript (ES6+), React *(or plain HTML/CSS if not using a framework)*
-- **Styling:** TailwindCSS / Custom CSS
-- **Hosting:** GitHub Pages / Vercel / Netlify
-- **Forms:** Formspree / EmailJS *(for contact form if applicable)*
+- **Styling:** React / Custom CSS
+- **Hosting:** GitHub Pages 
+- **Forms:** EmailJS *(for contact form if applicable)*
 
 ---
 
