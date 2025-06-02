@@ -3,7 +3,7 @@
 <p align="center">
   A personal website showcasing my work, experience, and creative projects.
   <br />
-  <a href="[https://nicholasackley.github.io](https://nicholas-ackley.github.io/website/)" target="_blank"><strong>🌟 View Live Website »</strong></a>
+  <a href="https://nicholas-ackley.github.io/website/" target="_blank"><strong>🌟 View Live Website »</strong></a>
 </p>
 
 ---
