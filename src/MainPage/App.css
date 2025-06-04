@@ -1,10 +1,12 @@
-html, body {
+html, body, #root {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100vh;
     overscroll-behavior: none;
-    overflow: hidden;
+   overflow-x: hidden;
+overflow-y: auto;
+
   background-color: #000000ee;
   padding-top: env(safe-area-inset-top);
   padding-bottom: env(safe-area-inset-bottom);
