@@ -18,7 +18,7 @@ h3 {
   margin: 0 auto;
   padding: 20px;
   margin-top: 5%;
-  background-color: #252525cf;
+
   border-radius: 25px;
   border: 1px solid rgba(255, 255, 255, 0.178);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -117,7 +117,6 @@ opacity: 0;
   align-items: center;
   height: 100vh;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0);
   
 
 

@@ -52,27 +52,29 @@ export const ProfilePicture = () => {
 
   return (
     <>
-      <div className="mainContainer_info">
-        <div className="hello_container">
-          <h3>Hello Worlaaaaaaaaaaaaaaaaaaaad I'm</h3>
-        </div>
-        <div className="name_container">
-          <h1><b>Nicholas Ackley</b></h1>
-        </div>
-        <div className="typeWriter_container">
-          <h3>
-            <span className="typewriter">{text}</span>
-            <span className="cursor"></span>
-          </h3>
-        </div>
-        <div className="welcome_container">
-          Welcome to My personal website 👋
-        </div>
+<div class="main-container">
+  <div class="card">
+    <div class="title-and-circle">
+      <div class="titles">
+        <h5 class="title1">Hello World, I'm</h5>
+        <h1 class="title2">Nicholas Ackley</h1>
+        <h3 class="typewriter_container">
+          <span className="typewriter">{text}</span>
+          <span className="cursor"></span>
+        </h3>
+          <h4 className="title3" style={{ fontWeight: 'bold' }}>
+            Welcome to my personal portfolio 👋
+          </h4>
       </div>
-      <div className="profileContainer_picture">
-        <img className='me' src={Me} alt="Profile" />
+      <div className="circle">
+        <img src={Me} alt="Nicholas Ackley" className="circle-image" />
+      </div>
+    </div>
+  </div>
+</div>
 
-      </div>
+
+
     </>
   );
 };

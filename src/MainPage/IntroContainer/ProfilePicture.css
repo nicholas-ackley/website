@@ -1,86 +1,219 @@
-.mainContainer_info{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    justify-content: left;
-    width: 550px;
-    height: 300px;
-    /* background-color: rgba(0, 0, 0, 0); */
-    
-    position: relative; 
-    top: 35%;
-    left: 25%;
-    text-indent: left;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+h1{
+  font-size: 2.5rem;
+}
+
+  .main-container {
+  display: flex;
+  justify-content: center;  /* centers horizontally */
+  align-items: center;      /* centers vertically */
+  height: 100vh;
+  position: relative;
+  background-color: transparent;
+
+
+}
+
+.card {
+  width: 140vh;
+  height: 60vh;
+  max-width: 90%;
+  background-color: transparent;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  top: 10vh;
+
+}
+.card img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 
-.me {
-    width: 250%; /* Fill the width of the circle */
-    height: 140%; /* Fill the height of the circle */
-    object-fit: cover; /* Ensures the image scales proportionally */
-    object-position: center; /* Centers the image inside the circle */
-    transform: translateX(-36%);
+.title-and-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.hello_container {
-    color: rgb(240, 240, 116);
-    margin-bottom: -55px;
-    font-size: 1.2rem;
-    font-weight: 100;
-    font-family: 'Poppins', sans-serif; /* Elegant font family */
-    font-size: 1.5rem; /* Slightly larger font size for better visibility */
-    font-weight: 400; /* Smooth weight for elegance */
-    letter-spacing: 1px; /* Slight spacing for clarity */
-    text-transform: capitalize; /* Ensures uniform capitalization */
+.titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  padding: 2vh;
+}
+.title1{
+  color: rgb(255, 251, 18);
+  font-size: 1.2rem;
+  font-weight: 100;
+  font-family: 'Poppins', sans-serif; /* Elegant font family */
+  font-weight: 400; /* Smooth weight for elegance */
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
 }
 
-.name_container {
-    color: white;
-    font-size: x-large;
-    font-display: bold;
-    margin-bottom: -45px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.4rem; 
-    font-weight: 700;
-    opacity: 0; 
-    position: relative; /* Position for animation */
-    animation: slideInBottom .7s ease forwards; 
-    animation-delay: 0.69s; 
-  }
+.title2 {
+  color: rgb(255, 255, 255);
+  margin: 0;
+  animation: slideInBottom .7s ease forwards; 
+  animation-delay: 0.69s; 
+  opacity: 0; 
+
   
-  .typeWriter_container {
-    color: yellow;
-    position: relative;
-    margin-bottom: -10px;
+  
+
+}
+.typewriter_container {
+  /* min-width: 250px; */
+  height: 1.5em;
+  display: inline-block;
+  text-align: left;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  animation: slideInBottom .7s ease forwards; 
+  animation-delay: 0.69s;
+  opacity: 0; 
+}
+
+.typewriter {
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
-    color: white;
-  
-    /* Animation */
-    opacity: 0; /* Start invisible */
-    position: relative; /* Position for animation */
-    animation: slideInBottom .7s ease forwards; /* Slide-in from bottom */
-    animation-delay: .69s; /* Delay to start after name container */
+
+}
+.title3{
+  color: #ffffff;
+  /* font-size: 24px; */
+  margin: 0;
+  animation: slideInLeft .7s ease forwards; 
+  animation-delay: 0.69s; 
+  opacity: 0; 
+  text-align: left;
+}
+
+.circle {
+  width: 43vh;
+  height: 43vh;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: slideInRight 0.7s ease forwards, breathing-glow 6s ease-in-out infinite;
+  animation-delay: 0.69s, 1.2s;
+  box-shadow:
+    0 0 0 4px #fff100,      /* solid yellow outline */
+    0 0 20px 10px #fff100,  /* soft glow */
+    0 0 40px 20px #fff100;  /* extended glow */
+  background-color: transparent;
+}
+
+.circle-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: -2vh -22vh;
+  transform: scale(2.3); /* Scale the image to fill the circle */
+}
+
+
+/* Responsive behavior: on small screens, stack with circle on top */
+@media (max-width: 600px) {
+  .title-and-circle {
+    flex-direction: column-reverse;
+    align-items: center;
   }
-  
-  .welcome_container {
-    color: white;
-    font-size: small;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    font-weight: 800;
-    color: #ffffff;
-  
-    /* Animation */
-    opacity: 0; /* Start invisible */
-    position: relative; /* Position for animation */
-    animation: slideInLeft .7s ease forwards; /* Slide-in from left */
-    animation-delay: .71s; /* Delay to start after type writer container */
+
+  .titles {
+    align-items: center;
+    text-align: center;
   }
-  
+  .circle-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: -2vh -16vh;
+  transform: scale(2).3; /* Scale the image to fill the circle */
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* Keyframes for sliding animations */
   
   /* Sliding in from bottom */
@@ -104,6 +237,16 @@
     100% {
       opacity: 1;
       transform: translateX(0); /* End in place */
+    }
+  }
+    @keyframes slideInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(200%); /* Start far to the right */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%); /* End in place */
     }
   }
   
@@ -133,23 +276,20 @@
   
   /* PUSLING GLOW EFFECT */
   
-/* Initial animation state for profile picture */
-.profileContainer_picture {
-  width: 400px; /* Diameter of the circle */
-  height: 400px; /* Diameter of the circle */
-  background-color: white; /* Background of the circle */
-  border-radius: 50%; /* Makes it a circle */
-  position: fixed; /* Positions the circle relative to the viewport */
-  left: 50%; /* Start far to the right */
-  top: 25%; /* Adjust vertically */
-  box-shadow: 0 0 10px 5px rgba(191, 223, 14, 0.4); /* Softer glow */
-  border: 3px solid rgba(223, 226, 37, 0.3); /* Dim border */
-  animation: slideIn .8s ease forwards; /* Trigger slide-in animation */
-  animation-delay: .5s;
-  opacity: 0; /* Star invisible */
-  overflow: hidden; /* Ensures the image stays inside the circle */
+@keyframes breathing-glow {
+  0%, 100% {
+    box-shadow:
+      0 0 0 1px #f1e83ccc,
+      0 0 1px 1px #f1e83ccc,
+      0 0 0px 3px #f1e83ccc;
+  }
+  50% {
+    box-shadow:
+      0 0 0 4px #f1e83ccc,
+      0 0 2px 2px #f1e83ccc,
+      0 0 10px 6px #f1e83ccc;
+  }
 }
-
 /* Keyframes for slide-in animation */
 @keyframes slideIn {
   0% {
@@ -180,41 +320,18 @@
 
 
 /* MAC BOOK M2 DISPLAY */
-@media (min-width: 1280px) and (max-width: 1600px) {
-  /* Styles for MacBook Air/Pro M2 screens */
+/* @media (min-width: 1280px){
+  Styles for MacBook Air/Pro M2 screens
   .mainContainer_info {
     position: relative;
     left: 35vh;
   }
-}
+} */
 
 
 /* IPHONE DISPLAY */
-@media(max-width: 300px) {
-    .signature_container_ios{
-  color: white;
-  color: #ffe600d8;
-  margin-right: 70%;
-  padding: 15px;
-  font-size: 1.3rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  animation: fadeInDrop 0.6s ease forwards;
-}
-  .profileContainer_picture {
-  width: 30vh; /* Diameter of the circle */
-  height: 30vh; /* Diameter of the circle */
-  background-color: white; /* Background of the circle */
-  border-radius: 50%; /* Makes it a circle */
-  position: fixed; /* Positions the circle relative to the viewport */
-  left: 5vh; 
-  top: 13vh; /* Adjust vertically */
-  box-shadow: 0 0 10px 5px rgba(191, 223, 14, 0.4); /* Softer glow */
-  border: 3px solid rgba(223, 226, 37, 0.3); /* Dim border */
-  animation: slideIn .8s ease forwards; /* Trigger slide-in animation */
-  animation-delay: .5s;
-  opacity: 0; /* Star invisible */
-  overflow: hidden; /* Ensures the image stays inside the circle */
-}
+@media(max-width: 430px) {
+
 .navbar-container {
 /* display: none; */
 left: 3vh;
@@ -241,52 +358,22 @@ left: 3vh;
 
 }
 
-.hello_container {
-font-size: small;
-position: relative; /* Position for animation */
-top: 100px;
+  
 }
-.name_container {
-    color: white;
-    font-size: medium;
-    margin-bottom: -45px;
-    opacity: 0; 
-    top: 120px;
-    left: -6.5vh;
-    animation: slideInBottom .7s ease forwards; 
-    animation-delay: 0.69s; 
-  }
+/* 
+.circle {
+  width: 45vh;
+  height: 45vh;
+  background-color: red;
+  border-radius: 50%;
+  animation: slideInRight 0.7s ease forwards;
+  animation-delay: 0.69s;
+} */
 
- 
-  .typeWriter_container {
-    color: rgb(228, 228, 71);
-    position: relative;
-    margin-bottom: -10px;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 600;
-  
-    /* Animation */
-    opacity: 0; /* Start invisible */
-    top: 14vh;
-    left: -1vh;
-    animation: slideInBottom .7s ease forwards; /* Slide-in from bottom */
-    animation-delay: .69s; /* Delay to start after name container */
+/* 👇 Mobile override */
+@media (max-width: 600px) {
+  .circle {
+    width: 32vh !important;
+    height: 32vh !important;
   }
-  
-  .welcome_container {
-    color: white;
-    font-size: small;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 800;
-    /* Animation */
-    opacity: 0; /* Start invisible */
-    position: relative; /* Position for animation */
-    top: 14vh;
-    left: -5vh;
-    animation: slideInLeft .7s ease forwards; /* Slide-in from left */
-    animation-delay: .71s; /* Delay to start after type writer container */
-  }
-  
 }

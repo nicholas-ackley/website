@@ -30,7 +30,7 @@ const Projects = () => {
 
         <div className="project-card">
           <div className="project-thumbnail">
-            <img src={Greek} alt="Sahabat Muslim" className="project-image" />
+            <img src={Greek} alt="Greek" className="project-image" />
           </div>
           <h3 className="project-name"> Greek-Pop</h3>
           <p className="project-description">
