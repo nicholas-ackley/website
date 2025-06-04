@@ -2,6 +2,11 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  touch-action: none;
+    overscroll-behavior: none;
+  overflow: hidden;
+  background-color: #000000ee;
+
 }
 h1{
   font-size: 2.5rem;
@@ -110,12 +115,13 @@ h1{
   height: 43vh;
   border-radius: 50%;
   overflow: hidden;
+  opacity: 0;
   animation: slideInRight 0.7s ease forwards, breathing-glow 6s ease-in-out infinite;
   animation-delay: 0.69s, 1.2s;
   box-shadow:
     0 0 0 4px #fff100,      /* solid yellow outline */
-    0 0 20px 10px #fff100,  /* soft glow */
-    0 0 40px 20px #fff100;  /* extended glow */
+    0 0 0px 3px #fff100,  /* soft glow */
+    0 0 0px 5px #fff100;  /* extended glow */
   background-color: transparent;
 }
 
