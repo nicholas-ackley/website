@@ -1,26 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap');
+
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   touch-action: none;
-    overscroll-behavior: none;
+  overscroll-behavior: none;
   overflow: hidden;
-  background-color: #000000ee;
-
+  /* background-color: #000000ee; */
+  background-color: #161616;
+  font-family: 'DM Sans', sans-serif;
 }
-h1{
+
+h1 {
   font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
 }
 
-  .main-container {
+.main-container {
   display: flex;
-  justify-content: center;  /* centers horizontally */
-  align-items: center;      /* centers vertically */
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   position: relative;
   background-color: transparent;
-
-
 }
 
 .card {
@@ -32,14 +35,13 @@ h1{
   text-align: center;
   position: relative;
   top: 10vh;
-
 }
+
 .card img {
   width: 100%;
   border-radius: 50%;
   object-fit: cover;
 }
-
 
 .title-and-circle {
   display: flex;
@@ -59,12 +61,12 @@ h1{
   margin-bottom: 0.3rem;
   padding: 2vh;
 }
-.title1{
+
+.title1 {
   color: rgb(255, 251, 18);
   font-size: 1.2rem;
-  font-weight: 100;
-  font-family: 'Poppins', sans-serif; /* Elegant font family */
-  font-weight: 400; /* Smooth weight for elegance */
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
   margin-top: 0.4rem;
   margin-bottom: 0.4rem;
 }
@@ -72,42 +74,38 @@ h1{
 .title2 {
   color: rgb(255, 255, 255);
   margin: 0;
-  animation: slideInBottom .7s ease forwards; 
-  animation-delay: 0.69s; 
-  opacity: 0; 
-
-  
-  
-
+  animation: slideInBottom .7s ease forwards;
+  animation-delay: 0.69s;
+  opacity: 0;
+  font-family: 'Poppins', sans-serif;
 }
+
 .typewriter_container {
-  /* min-width: 250px; */
   height: 1.5em;
   display: inline-block;
   text-align: left;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-  animation: slideInBottom .7s ease forwards; 
+  animation: slideInBottom .7s ease forwards;
   animation-delay: 0.69s;
-  opacity: 0; 
+  opacity: 0;
 }
 
 .typewriter {
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 600;
-
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: 'DM Sans', sans-serif;
 }
-.title3{
+
+.title3 {
   color: #ffffff;
-  /* font-size: 24px; */
   margin: 0;
-  animation: slideInLeft .7s ease forwards; 
-  animation-delay: 0.69s; 
-  opacity: 0; 
+  animation: slideInLeft .7s ease forwards;
+  animation-delay: 0.69s;
+  opacity: 0;
   text-align: left;
+  font-family: 'Poppins', sans-serif;
 }
 
 .circle {
@@ -119,9 +117,9 @@ h1{
   animation: slideInRight 0.7s ease forwards, breathing-glow 6s ease-in-out infinite;
   animation-delay: 0.69s, 1.2s;
   box-shadow:
-    0 0 0 4px #fff100,      /* solid yellow outline */
-    0 0 0px 3px #fff100,  /* soft glow */
-    0 0 0px 5px #fff100;  /* extended glow */
+    0 0 0 4px #fff100,
+    0 0 0px 3px #fff100,
+    0 0 0px 5px #fff100;
   background-color: transparent;
 }
 
@@ -131,11 +129,9 @@ h1{
   border-radius: 50%;
   object-fit: cover;
   object-position: -2vh -22vh;
-  transform: scale(2.3); /* Scale the image to fill the circle */
+  transform: scale(2.3);
 }
 
-
-/* Responsive behavior: on small screens, stack with circle on top */
 @media (max-width: 600px) {
   .title-and-circle {
     flex-direction: column-reverse;
@@ -146,142 +142,117 @@ h1{
     align-items: center;
     text-align: center;
   }
+
   .circle-image {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: -2vh -16vh;
-  transform: scale(2).3; /* Scale the image to fill the circle */
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: -2vh -19vh;
+    transform: scale(2.3);
+  }
+
+  .navbar-container {
+    left: 3vh;
+    backdrop-filter: none;
+  }
+
+  .navbar-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    bottom: -2vh;
+    left: 0;
+    width: 100%;
+    height: 6.5vh;
+    background-color: rgb(26, 26, 26);
+    z-index: 1000;
+    padding: 0 0vh;
+    border-radius: 15px 10px 0 0;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .navbar-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: clamp(15px, .0vw, 0vh);
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .circle {
+    width: 38vh !important;
+    height: 38vh !important;
+  }
+
+  .card {
+    width: 140vh;
+    height: 60vh;
+    max-width: 90%;
+    background-color: transparent;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    top: 0vh;
+  }
+
+  .navbar-container {}
 }
 
+@media(max-width: 430px) {}
+
+@keyframes slideInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* Keyframes for sliding animations */
-  
-  /* Sliding in from bottom */
-  @keyframes slideInBottom {
-    0% {
-      opacity: 0;
-      transform: translateY(50px); /* Start below the viewport */
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0); /* End in place */
-    }
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-200%);
   }
-  
-  /* Sliding in from left */
-  @keyframes slideInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-200%); /* Start far to the left */
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0); /* End in place */
-    }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
-    @keyframes slideInRight {
-    0% {
-      opacity: 0;
-      transform: translateX(200%); /* Start far to the right */
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0%); /* End in place */
-    }
-  }
-  
+}
 
-
-/* TYPE WRITER EFFECTS  */
-
-  
-  .cursor {
-    display: inline-block;
-    background-color: orange; /* Blinking orange cursor */
-    width: 2px; /* Thin cursor */
-    height: 1em; /* Matches text height */
-    margin-left: 1px; /* Slight gap from text */
-    animation: blink 0.7s infinite; /* Blinking effect */
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(200%);
   }
-  
-  @keyframes blink {
-    0%, 100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
   }
-  
-  
-  /* PUSLING GLOW EFFECT */
-  
+}
+
+.cursor {
+  display: inline-block;
+  background-color: orange;
+  width: 2px;
+  height: 1em;
+  margin-left: 1px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 @keyframes breathing-glow {
   0%, 100% {
     box-shadow:
@@ -296,109 +267,25 @@ h1{
       0 0 10px 6px #f1e83ccc;
   }
 }
-/* Keyframes for slide-in animation */
+
 @keyframes slideIn {
   0% {
-    opacity: 0; /* Fully transparent */
-    transform: translateX(200%); /* Start far to the right */
+    opacity: 0;
+    transform: translateX(200%);
   }
   100% {
-    opacity: 1; /* Fully visible */
-    transform: translateX(0); /* Final position */
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
-
-/* Pulsing Glow Effect for Border */
 @keyframes pulse {
-    0%, 100% {
-        box-shadow: 0 0 10px 5px rgba(151, 180, 21, 0.3); /* Dim, soft glow */
-        border: 3px solid rgba(240, 243, 42, 0.3); /* Dim border */
-    }
-    50% {
-        box-shadow: 0 0 15px 10px rgba(233, 218, 11, 0.808); /* Slightly stronger glow */
-        border: 3px solid rgba(208, 255, 0, 0.5); /* Slightly stronger border glow */
-    }
-}
-
-
-
-
-
-/* MAC BOOK M2 DISPLAY */
-/* @media (min-width: 1280px){
-  Styles for MacBook Air/Pro M2 screens
-  .mainContainer_info {
-    position: relative;
-    left: 35vh;
+  0%, 100% {
+    box-shadow: 0 0 10px 5px rgba(151, 180, 21, 0.3);
+    border: 3px solid rgba(240, 243, 42, 0.3);
   }
-} */
-
-
-/* IPHONE DISPLAY */
-@media(max-width: 430px) {
-
-
-  
-}
-/* 
-.circle {
-  width: 45vh;
-  height: 45vh;
-  background-color: red;
-  border-radius: 50%;
-  animation: slideInRight 0.7s ease forwards;
-  animation-delay: 0.69s;
-} */
-
-/* 👇 Mobile override */
-@media (max-width: 600px) {
-  .navbar-container {
-    /* display: none; */
-    left: 3vh;
-    backdrop-filter: none;
+  50% {
+    box-shadow: 0 0 15px 10px rgba(233, 218, 11, 0.808);
+    border: 3px solid rgba(208, 255, 0, 0.5);
   }
- .navbar-links {
-  display: flex;
-  justify-content: space-evenly; 
-  align-items: center;
-  position: fixed;
-  bottom: -2vh;
-  left: 0;
-  width: 100%;
-  height: 6.5vh;
-  background-color: rgba(66, 66, 66, 0.315);
-  z-index: 1000;
-  padding: 0 0vh;
-  border-radius: 15px 10px 0 0;
-}
-
-.navbar-links a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: clamp(15px, .0vw, 0vh);
-}
-
-
-  .circle {
-    width: 32vh !important;
-    height: 32vh !important;
-  }
-
-  .card {
-  width: 140vh;
-  height: 60vh;
-  max-width: 90%;
-  background-color: transparent;
-  border-radius: 10px;
-  text-align: center;
-  position: relative;
-  top: 0vh;
-
-}
-.navbar-container {
-
-}
-
 }

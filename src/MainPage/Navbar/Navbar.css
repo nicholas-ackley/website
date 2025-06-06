@@ -1,11 +1,13 @@
 .navbar-container {
   display: flex; /* Ensures the navbar stays horizontal */
   justify-content: center; /* Center the navbar horizontally */
-  background-color: rgba(32, 32, 32, 0.452);
+  /* background-color: rgba(32, 32, 32, 0.452); */
+  background-color: #16161691;
+
   backdrop-filter: blur(8px);
   position: fixed;
-  padding: 10px 20px; /* Spacing around the navbar */
-  height: 50px;
+  padding: 10px 20px; 
+  height: 70px;
   width: 100%;
   z-index:1;
 }
@@ -14,7 +16,7 @@
   display: flex; /* Make the list items horizontal */
   gap: 40px; /* Add spacing between links */
   position: fixed;
-  list-style: none; /* Remove bullets from the list */
+  list-style: none; 
 }
 
 .navbar-links li {
@@ -61,19 +63,19 @@
 
 
 .github_container {
-  height: 3vh; /* Diameter of the circle */
-  width: 3vh; /* Diameter of the circle */
-  border-radius: 50%; /* Makes the container a circle */
-  background-color: white; /* Background of the circle */
-  position: fixed;
+  height: 3vh; 
+  width: 3vh; 
+  border-radius: 50%; 
+  background-color: white; 
+  position: absolute;
   right: 20%;
   top: 25px;
-  overflow: hidden; /* Ensures the image stays inside the circle */
-  animation: fadeInDrop 0.6s ease forwards; /* Animation for fade and drop */
-  opacity: 0; /* Initially hidden */
-  transform: translateY(-30px); /* Start above the viewport */
-  animation: fadeInDrop 0.6s ease forwards; /* Animation for fade and drop */
-  animation-delay: 0.6s; /* Delay the animation */
+  overflow: hidden; 
+  animation: fadeInDrop 0.6s ease forwards; 
+  opacity: 0; 
+  transform: translateY(-30px); 
+  animation: fadeInDrop 0.6s ease forwards; 
+  animation-delay: 0.6s; 
 
 }
 
@@ -82,8 +84,7 @@
   height: 100%; 
   object-fit: cover; /* Scales the image */
   object-position: center; /* Centers t
-  position: relative;
-  top: -1px;
+
 
 /* }
 

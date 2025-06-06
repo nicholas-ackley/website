@@ -1,109 +1,76 @@
-import React from 'react'
-import './Bio.css'
-import Gib from '../images/gib.jpg'
-//Image imports
-import HTML from '../images/html-logo.png'
-import Python from '../images/python-logo.png'
-import Javascript from '../images/js-logo.png'
-import CSS from '../images/css-logo.png'
-import Traver from '../images/traver-logo.png'
-import ReactLogo from '../images/react-logo.png'
-import Swift from '../images/swift.png'
-import CPlusPlus from '../images/c++.png'
+import React from 'react';
+import './Bio.css';
+import ProfilePic from '../images/profile.png'; // your uploaded image
 const Bio = () => {
   return (
     <>
-      <div className="about-me-background">
-        <div className="aboutMe_Title">About me
-          <div className="yellow_line"></div>
-        </div>
-        <div className="aboutMe_container">
-        <div className="profilePic_container">
-          <img src={Gib} alt="profilePic" className="profilePic_image"/>
-        </div>
-          {/* <div className="aboutMe_paragraph">
-          <h3>Hi everyone! My name is Nicholas Ackley. I'm currently a student at the University of Texas at Dallas
-            studying Computer Science and Music. In this website, you will find a collection of my projects, that 
-            I have worked on in my free time. Creating these projects I combined both my passion for coding, as well as my take on simple
-            yet clean designs.
-          </h3>
+      {/* About Me Section */}
+      <div className="hero-about">
+        <div className="aboutme-container">
+          <div className="aboutme-title">
+            <h2>About Me</h2>
+            <div className="aboutme-underline" />
           </div>
-          <div className="aboutMe_paragraph2">
-        <h3>
-        I'm currently looking for internships in the field of software development. Here I have listed languages I have used 
-        in my projects or as a Full Stack intern. For any inquiries for internships or full time offers, feel free to reach out to me!
-        </h3>
-       </div> */}
-       
-<div className="container">
 
-    <div className="rectangle">
-    <h3>Hi everyone! My name is Nicholas Ackley I'm currently a student at the University of Texas at Dallas
-            studying Computer Science and Music. In this website, you will find a colle+ction of my projects, that 
-            I have worked on in my free time. Creating these projects I combined both my passion for coding, as well as my take on simple
-            yet clean designs.
-          </h3>
-    </div>
-    <div className="rectangle">
-    <h3>
-        I'm currently looking for internships in the field of software development. Here I have listed languages I have used 
-        in my projects or as a Full Stack intern. For any inquiries for internships or full time offers, feel free to reach out to me!
-        </h3>
-    </div>
-   
-  </div>
-</div>
-  
-       </div>
-       <div className="grid-container">
-  <div className="box">
-    <img src={HTML} alt="HTML Logo" />
-    <span>HTML</span>
-  </div>
-  <div className="box">
-    <img src={CSS} alt="CSS Logo" />
-    <span>CSS</span>
-  </div>
-  <div className="box">
-    <img src={Javascript} alt="JavaScript Logo" />
-    <span>JavaScript</span>
-  </div>
-  <div className="box">
-    <img src={ReactLogo} alt="React Logo" />
-    <span>React</span>
-  </div>
-  <div className="box">
-    <img src={Python} alt="Python Logo" />
-    <span>Python</span>
-  </div>
-  <div className="box">
-    <img src={Swift} alt="Swift Logo" />
-    <span>Swift</span>
-  </div>
-  <div className="box">
-    <img src={CPlusPlus} alt="C++ Logo" />
-    <span>C++</span>
-  </div>
-  <div className="box">
-    <img src={Traver} alt="Traver Companies" />
-    <span>Traver Companies</span>
-  </div>
-  <div className="box">
-    <img src="github-logo.png" alt="GitHub Logo" />
-    <span>GitHub</span>
-  </div>
-  <div className="box">
-    <img src="mips-logo.png" alt="MIPS Logo" />
-    <span>MIPS</span>
-  </div>
-  <div className="box">
-    <img src="csharp-logo.png" alt="C# Logo" />
-    <span>C#</span>
-  </div>
-</div>
-    
+          <div className="aboutme-content">
+            <div className="aboutme-image-container">
+              <img
+                src={ProfilePic}
+                alt="Profile"
+                className="aboutme-image"
+              />
+            </div>
+
+            <div className="aboutme-text">
+              <p className="aboutme-paragraph">
+                Hi! My name is Nicholas Ackley. I'm a student at the <i>University of Texas at Dallas</i>, 
+                studying Computer Science. I'm passionate about software development, especially full-stack 
+                web and mobile applications. Whether I'm building responsive interfaces or creating backend 
+                logic, I enjoy turning creative ideas into real, working code.
+              </p>
+              <p className="aboutme-paragraph">
+                Outside of school, I’ve taken on many personal and team based projects that have 
+                 improved my skills as a software engineer, and am always looking for new challenges.
+                I'm always eager to learn new technologies, explore innovative tools, and contribute to 
+                meaningful projects. My goal is to build
+                impactful software that’s not only functional, but also user centered and thoughtfully 
+                designed.              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Skills Section */}
+      <div className="skills-section">
+        <div className="skills-header">
+          <h2>Skills</h2>
+        </div>
+
+        <div className="skills-tabs">
+          <button className="skills-tab active">Tech Stack</button>
+          <button className="skills-tab">Tools</button>
+        </div>
+
+        <div className="skills-grid">
+          {[
+            { name: 'HTML', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
+            { name: 'CSS', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
+            { name: 'PHP', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg' },
+            { name: 'JavaScript', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+            { name: 'C++', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg' },
+            { name: 'Python', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+            { name: 'React', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+            { name: 'TypeScript', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' }
+          ].map((tech, index) => (
+            <div key={index} className="skill-card">
+              <img src={tech.src} alt={tech.name} />
+              <span>{tech.name}</span>
+            </div>
+          ))}
+        </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Bio
+export default Bio;
