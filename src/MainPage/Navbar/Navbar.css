@@ -2,7 +2,7 @@
   display: flex; /* Ensures the navbar stays horizontal */
   justify-content: center; /* Center the navbar horizontally */
   /* background-color: rgba(32, 32, 32, 0.452); */
-  background-color: #16161691;
+  background-color: #0e0e0e91;
 
   backdrop-filter: blur(8px);
   position: fixed;
