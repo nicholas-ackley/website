@@ -320,11 +320,12 @@ body {
   }
   .aboutme-container{
     width: 110%;
-    height: 123vh;
+    height: 130vh;
   }
 
   .aboutme-text {
     flex: unset;
+    padding: 15px;
   }
 
 .skills-grid {
