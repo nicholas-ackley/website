@@ -132,7 +132,7 @@ h1 {
   transform: scale(2.3);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 393px) and (max-height: 852px) {
 
   .title-and-circle {
     flex-direction: column-reverse;
