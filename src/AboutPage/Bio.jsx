@@ -8,7 +8,7 @@ const Bio = () => {
       <div className="hero-about">
         <div className="aboutme-container">
           <div className="aboutme-title">
-            <h2>About Me</h2>
+            <h2>TESTING</h2>
             <div className="aboutme-underline" />
           </div>
 
