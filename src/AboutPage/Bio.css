@@ -322,12 +322,13 @@ text-align: center;
     width: 100%;
     height: 110vh;
     width: 110%;
-    height: 123vh;
+    height: 140vh;
 }
 
 .aboutme-text {
-flex: unset;
+  padding-left: 10px;
 }
+
 
 .skills-grid {
 display: grid;
