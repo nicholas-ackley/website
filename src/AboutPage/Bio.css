@@ -155,6 +155,7 @@ body {
   width: 100%;
   height: 60vh;
   box-shadow: 0 0 20px rgba(255, 255, 0, 0.03);
+  padding-left: 10px;
 }
 
 .aboutme-title {
@@ -224,6 +225,7 @@ body {
   margin: 60px auto;
   max-width: 1200px;
   padding: 0 0px;
+  padding-bottom: 100px;
 }
 
 .skills-header {
@@ -310,15 +312,15 @@ body {
 
 /* ---------- Responsive ---------- */
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .aboutme-content {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
   .aboutme-container{
-    width: 100%;
-    height: 110vh;
+    width: 110%;
+    height: 123vh;
   }
 
   .aboutme-text {
@@ -334,4 +336,14 @@ body {
 position: relative;
 
 }
+.aboutme-paragraph {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.8;
+  padding: -19px ; /* adds equal spacing on left & right */
+  text-align: left;
+  word-break: break-word;
+  box-sizing: border-box;
+}
+
 }

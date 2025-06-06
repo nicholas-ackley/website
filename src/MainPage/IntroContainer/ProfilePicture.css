@@ -133,9 +133,12 @@ h1 {
 }
 
 @media (max-width: 600px) {
+
   .title-and-circle {
     flex-direction: column-reverse;
     align-items: center;
+    position: relative;
+    top: -100px;
   }
 
   .titles {
@@ -199,7 +202,6 @@ h1 {
 
 }
 
-@media(max-width: 430px) {}
 
 @keyframes slideInBottom {
   0% {
@@ -241,6 +243,10 @@ h1 {
   height: 1em;
   margin-left: 1px;
   animation: blink 0.7s infinite;
+}
+  h1 {
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 @keyframes blink {
