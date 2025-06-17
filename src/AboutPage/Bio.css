@@ -162,6 +162,7 @@ display: flex;
 align-items: center;
 gap: 10px;
 margin-bottom: 30px;
+animation: fadeInDrop 0.6s ease forwards;
 }
 
 .aboutme-title h2 {
@@ -170,10 +171,10 @@ color: white;
 }
 
 .aboutme-underline {
-flex-grow: 1;
+flex-grow: .4;
 height: 2px;
 background-color: #ffe600;
-border-radius: 2px;
+border-radius: 2px
 }
 
 .aboutme-content {
@@ -194,6 +195,9 @@ background-color: #111; /* fallback background */
 display: flex;
 justify-content: center;
 align-items: center;
+opacity: 0;
+animation: slideInBottom 1s ease forwards;
+animation-delay: 500ms;
 }
 
 .aboutme-image {
@@ -215,6 +219,16 @@ margin-bottom: 20px;
 font-size: 1rem;
 line-height: 1.8;
 color: #e0e0e0;
+animation: slideInRight 0.8s ease forwards;
+opacity: 0;
+
+
+}
+.delay-1{
+animation-delay: 650ms;
+}
+.delay-2{
+animation-delay: 850ms;
 }
 
 
@@ -308,6 +322,27 @@ object-fit: contain;
 font-weight: 600;
 color: #fff;
 }
+@keyframes slideInBottom {
+0% {
+opacity: 0;
+transform: translateY(150px);
+}
+100% {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+@keyframes slideInRight {
+0% {
+opacity: 0;
+transform: translateX(200%);
+}
+100% {
+opacity: 1;
+transform: translateX(0%);
+}
+}
 
 /* ---------- Responsive ---------- */
 
@@ -324,7 +359,7 @@ text-align: center;
 
 .aboutme-text {
   padding-left: 10px;
-}
+} 
 
 
 .skills-grid {

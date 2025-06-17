@@ -8,7 +8,7 @@ const Bio = () => {
       <div className="hero-about">
         <div className="aboutme-container">
           <div className="aboutme-title">
-            <h2>TESTING</h2>
+            <h2>About Me</h2>
             <div className="aboutme-underline" />
           </div>
 
@@ -22,19 +22,19 @@ const Bio = () => {
             </div>
 
             <div className="aboutme-text">
-              <p className="aboutme-paragraph">
+              <p className="aboutme-paragraph delay-1">
                 Hi! My name is Nicholas Ackley. I'm a student at the <i>University of Texas at Dallas</i>, 
                 studying Computer Science. I'm passionate about software development, especially full-stack 
                 web and mobile applications. Whether I'm building responsive interfaces or creating backend 
                 logic, I enjoy turning creative ideas into real, working code.
               </p>
-              <p className="aboutme-paragraph">
+              <p className="aboutme-paragraph delay-2">
                 Outside of school, I’ve taken on many personal and team based projects that have 
                  improved my skills as a software engineer, and am always looking for new challenges.
                 I'm always eager to learn new technologies, explore innovative tools, and contribute to 
                 meaningful projects. My goal is to build
                 impactful software that’s not only functional, but also user centered and thoughtfully 
-                designed.              </p>
+                designed. Inspired by: <i>@BagasRakha</i></p>
             </div>
           </div>
         </div>
