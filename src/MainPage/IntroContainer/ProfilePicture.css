@@ -60,7 +60,7 @@ html, body {
 
 .hero-name {
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   margin: 0;
   animation: slideInBottom .7s ease forwards;
@@ -171,78 +171,61 @@ html, body {
 }
 
 /* Responsive */
-.profile-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  padding: 3rem 0;
-}
-
-.profile-image {
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #f1c40f;
-  transition: transform 0.3s ease;
-}
-
-.profile-image:hover {
-  transform: scale(1.05);
-}
-
-.profile-text {
-  color: white;
-  max-width: 550px;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-/* 🔹 MEDIA QUERIES */
-@media (max-width: 1024px) {
-  .profile-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 2rem;
-  }
-
-  .profile-text {
-    max-width: 90%;
-  }
-
-  .profile-image {
-    width: 200px;
-    height: 200px;
-  }
-}
-
-@media (max-width: 768px) {
-  .profile-container {
-    padding: 2rem 1rem;
-  }
-
-  .profile-image {
-    width: 160px;
-    height: 160px;
-  }
-
-  .profile-text {
-    font-size: 0.95rem;
-  }
-}
-
 @media (max-width: 480px) {
-  .profile-container {
+  .hero-main {
+    height: auto;
+    padding: 4rem 1rem;
+    overflow: visible;
+  }
+
+  .hero-card {
+    height: auto;
+    top: 0;
+    text-align: center;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 1.5rem;
   }
 
-  .profile-image {
-    width: 130px;
-    height: 130px;
+  .hero-image-container {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 1rem;
+    animation: breathing-glow 6s ease-in-out infinite;
   }
 
-  .profile-text {
-    font-size: 0.9rem;
+  .hero-image {
+    object-fit: cover;
+    object-position: center;
+    transform: scale(2.1);
+  }
+
+  .hero-text {
+    text-align: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .hero-intro {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .hero-name {
+    font-size: 1.6rem;
+  }
+
+  .hero-roles .typewriter {
+    font-size: 1rem;
+  }
+
+  .hero-subtext {
+    font-size: 0.95rem;
+    color: #e8e8e8;
+    max-width: 80%;
   }
 }

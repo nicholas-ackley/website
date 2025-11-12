@@ -44,7 +44,7 @@ export const Website = () => {
       <div className="hero-card">
         <div className="hero-content">
           <div className="hero-text">
-            <h5 className="hero-intro">Hello TESTINGWorld, I'm</h5>
+            <h5 className="hero-intro">Hello World, I'm</h5>
             <h1 className="hero-name">Nicholas Ackley</h1>
             <h3 className="hero-roles">
               <span className="typewriter">{text}</span>
