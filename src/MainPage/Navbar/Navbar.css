@@ -1,139 +1,49 @@
 .navbar-container {
-  display: flex; /* Ensures the navbar stays horizontal */
-  justify-content: center; /* Center the navbar horizontally */
-  /* background-color: rgba(32, 32, 32, 0.452); */
+  display: flex;
+  justify-content: center;
   background-color: #0e0e0e91;
-
   backdrop-filter: blur(8px);
   position: fixed;
-  padding: 30px 20px; 
+  padding: 30px 20px;
   height: 70px;
   width: 100%;
-  z-index:1;
+  z-index: 1;
   top: -10px;
 }
 
 .navbar-links {
-  display: flex; /* Make the list items horizontal */
-  gap: 40px; 
+  display: flex;
+  gap: 40px;
   position: fixed;
-  list-style: none; 
+  list-style: none;
 }
 
 .navbar-links li {
-  display: inline; /* Ensure list items do not stack */
+  display: inline;
 }
 
-.navbar-links a {
-  text-decoration: none !important; /* Remove underlines */
-  font-family: 'Poppins', sans-serif; /* Add modern font style */
-  font-size: 1rem; /* Adjust font size */
-  color: white; /* Set text color to white */
-  padding: 10px 10px; /* Add padding for better clickable area */
-  border-radius: 4px; /* Rounded edges for the link background */
-}
-
-.navbar-links a:hover {
-  color: #f1c40f; /* Highlight text on hover (yellow) */
-  background-color: rgba(255, 255, 255, 0.1); /* Subtle background hover effect */
-}
-.navbar-links a {
-  text-decoration: none; /* Remove default underline */
-  font-family: 'Poppins', sans-serif; /* Modern sans-serif font */
-  font-size: 1rem; /* Adjust font size */
-  font-weight: 600; /* Bold font */
-  color: white; /* White text color */
-  position: relative; /* For custom underline */
-  transition: color 0.3s ease; /* Smooth hover effect */
-}
-
-.navbar-links a::after {
-  content: ''; /* Empty content for the underline */
-  position: absolute;
-  width: 0; /* Start with no underline width */
-  height: 3px; /* Thickness of the underline */
-  background-color: #f1c40f; /* Yellow underline color */
-  left: 0;
-  bottom: -5px; /* Position below the text */
-  transition: width 0.3s ease; /* Smooth underline animation */
-}
-
-.navbar-links a:hover::after {
-  width: 100%; /* Extend underline on hover */
-}
-
-
-.github_container {
-  height: 3vh; 
-  width: 3vh; 
-  border-radius: 50%; 
-  background-color: white; 
-  position: absolute;
-  right: 20%;
-  top: 25px;
-  overflow: hidden; 
-  animation: fadeInDrop 0.6s ease forwards; 
-  opacity: 0; 
-  transform: translateY(-30px); 
-  animation: fadeInDrop 0.6s ease forwards; 
-  animation-delay: 0.6s; 
-
-}
-
-.github {
-  width: 100%;
-  height: 100%; 
-  object-fit: cover; /* Scales the image */
-  object-position: center; /* Centers t
-
-
-/* }
-
-/ */
-
-
-}
-.signature_container{
-  color: white;
-  color: #ffe600d8;
-  margin-right: 70%;
-  padding: 0px;
-  font-size: 1.3rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  animation: fadeInDrop 0.6s ease forwards;
-}
 .navbar-links a {
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   font-weight: 600;
-  color: white;
+  color: rgb(68, 68, 68);
   position: relative;
   transition: color 0.3s ease;
 }
 
-/* Active link with a glowing underline */
-
-.navbar-links a.active::after {
-  content: "";
-  position: absolute;
-  width: 100%; /* Full underline width */
-  height: 5px; /* Thicker underline */
-  background-color: #f1c40f; /* Yellow underline color */
-  border-radius: 10px; /* Smooth rounded edges */
-  bottom: -5px; /* Position below the text */
-  left: 0;
-  box-shadow: 0 0 10px #f1c40f, 0 0 20px #f1c40f, 0 0 30px #f1c40f; /* Glowing effect */
+.navbar-links a:hover {
+  color: #f1c40f;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Smooth animation on hover or when active */
 .navbar-links a::after {
   content: "";
   position: absolute;
-  width: 0; /* Start with no underline */
-  height: 5px; /* Thicker underline to match active */
+  width: 0;
+  height: 5px;
   background-color: #f1c40ff1;
-  border-radius: 10px; /* Smooth rounded edges */
+  border-radius: 10px;
   bottom: -5px;
   left: 0;
   transition: width 0.3s ease, box-shadow 0.3s ease;
@@ -141,50 +51,68 @@
 
 .navbar-links a:hover::after,
 .navbar-links a.active::after {
-  width: 100%; /* Expand underline to full width */
+  width: 100%;
 }
-
-/* Navbar item animation */
-.navbar-links .nav-item {
-  opacity: 0; /* Initially hidden */
-  transform: translateY(-30px); /* Start above the viewport */
-  animation: fadeInDrop 0.6s ease forwards; /* Animation for fade and drop */
-  animation-delay: .199999s;
-}
-
-/* Keyframes for the animation */
-@keyframes fadeInDrop {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px); /* Start above */
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0); /* Drop to final position */
-  }
-}
-
-/* Ensure each item has a unique delay */
-.navbar-links .nav-item {
-  animation-delay: var(--delay); /* Use inline animation delay */
-}
-
 
 .navbar-links a.active::after {
-  content: "";
-  position: absolute;
-  width: 100%; /* Full underline width */
-  height: 3px; /* Thickness of the underline */
-  background-color: #f1c40f; /* Yellow underline */
-  bottom: -5px; /* Position below the text */
+  width: 100%;
+  height: 3px;
+  background-color: #f1c40f;
+  bottom: -5px;
   left: 0;
-  border-radius: 5px; /* Smooth rounded edges */
-  box-shadow: 0 0 10px #f1c40f, 0 0 20px #f1c40f; /* Glowing effect */
-}
-.navbar-links a {
-  color: rgb(68, 68, 68); /* light transparent grey */
+  border-radius: 5px;
+  box-shadow: 0 0 10px #f1c40f, 0 0 20px #f1c40f;
 }
 
 .navbar-links a.active {
-  color: white; /* solid white for active link */
+  color: white;
+}
+
+.github_container {
+  height: 3vh;
+  width: 3vh;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  right: 20%;
+  top: 25px;
+  overflow: hidden;
+  animation: fadeInDrop 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-delay: 0.6s;
+}
+
+.github {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.signature_container {
+  color: #ffee55d8;
+  margin-right: 70%;
+  padding: 0;
+  font-size: 1.3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  animation: fadeInDrop 0.6s ease forwards;
+}
+
+.navbar-links .nav-item {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeInDrop 0.6s ease forwards;
+  animation-delay: var(--delay);
+}
+
+@keyframes fadeInDrop {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
