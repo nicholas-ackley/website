@@ -119,7 +119,7 @@ html, body {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  object-position: -2vh -22vh;
+  object-position: -5vh -22vh;
   transform: scale(2.3);
 }
 
@@ -182,7 +182,7 @@ html, body {
     justify-content: flex-start;
     align-items: center;
     height: auto;
-    padding: 4rem 1rem 6rem;
+    padding: 10rem 1rem 6rem;
     overflow: visible;
   }
 
@@ -197,29 +197,28 @@ html, body {
     align-items: center;
     justify-content: flex-start;
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 21rem;
   }
 
   .hero-image-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 180px;
-    height: 180px;
+    width: 308px;
+    height: 308px;
     border-radius: 50%;
-    margin-bottom: 1rem;
     background-color: transparent;
     animation: breathing-glow 6s ease-in-out infinite;
     opacity: 1;
+    margin-top: -550px;
   }
 
   .hero-image {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
-    transform: scale(1.9);
+    object-position: -6vh -5vh;
+    transform: scale(2.3)
   }
 
   .hero-text {
@@ -247,7 +246,9 @@ html, body {
 
   .hero-subtext {
     font-size: 0.95rem;
-    max-width: 85%;
+    max-width: 95%;
     color: #e8e8e8;
+  }
+  .navbar-container{
   }
 }
