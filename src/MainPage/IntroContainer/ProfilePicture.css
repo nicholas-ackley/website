@@ -197,7 +197,7 @@ html, body {
     align-items: center;
     justify-content: flex-start;
     gap: 2rem;
-    margin-top: 21rem;
+    margin-top: 12rem;
   }
 
   .hero-image-container {
@@ -210,7 +210,7 @@ html, body {
     background-color: transparent;
     animation: breathing-glow 6s ease-in-out infinite;
     opacity: 1;
-    margin-top: -550px;
+    margin-top: -530px;
   }
 
   .hero-image {
@@ -227,7 +227,7 @@ html, body {
     align-items: center;
     text-align: center;
     padding: 0;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
   }
 
   .hero-intro {
