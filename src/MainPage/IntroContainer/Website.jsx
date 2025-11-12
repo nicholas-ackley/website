@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./ProfilePicture.css";
-import Me from "../../images/me.png";
+import Me from "../../images/me4.png";
 
 export const Website = () => {
   const [text, setText] = useState("");

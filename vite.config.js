@@ -1,11 +1,8 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/website", // Base path for deployment
-  server: {
-    historyApiFallback: true, // Enable fallback for React Router
-  },
-});
+  base: '/website/',  // ✅ must have trailing slash
+})

@@ -1,5 +1,12 @@
 <!doctype html>
 <html lang="en">
+  <script type="text/javascript">
+  const path = window.location.pathname;
+  if (!path.startsWith('/<your-repo-name>/')) {
+    window.location.replace('/<your-repo-name>/');
+  }
+</script>
+
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/website/vite.svg" />
