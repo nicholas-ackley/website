@@ -171,6 +171,33 @@ html, body {
 }
 
 /* Responsive */
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 3rem 0;
+}
+
+.profile-image {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f1c40f;
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+}
+
+.profile-text {
+  color: white;
+  max-width: 550px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
 
 /* 🔹 MEDIA QUERIES */
 @media (max-width: 1024px) {
