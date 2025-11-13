@@ -119,7 +119,7 @@ html, body {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  object-position: -5vh -22vh;
+  object-position: -6vh -5vh;
   transform: scale(2.3);
 }
 
